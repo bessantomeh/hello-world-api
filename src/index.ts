@@ -16,7 +16,7 @@ app.get('/hello', (req: Request, res: Response) => {
 
 // Second Endpoint
 app.get('/info', (req: Request, res: Response) => {
-  const requestTime = new Date().toISOString();  // Using native Date formatting
+  const requestTime = new Date().toISOString();  
   const clientAddress = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
   const hostName = os.hostname();
   const headers = req.headers;
@@ -30,6 +30,8 @@ app.get('/info', (req: Request, res: Response) => {
 });
 
 // Start the server
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+
+export default server;  

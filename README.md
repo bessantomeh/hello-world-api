@@ -47,6 +47,16 @@ For development, if you want live-reloading, you can use nodemon:
 npm install -g nodemon
 nodemon src/index.ts
 
+### Running Tests
+To run the automated tests using Jest, follow these steps:
+
+1. Run the Tests
+Use the following command to execute the tests: (npm test)
+2. View Test Results
+The results of the tests will be displayed in the console. If all tests pass, you will see a summary indicating the number of tests that passed.
+
+
+
 
 
 
